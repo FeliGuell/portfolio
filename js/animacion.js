@@ -1,24 +1,4 @@
 
-/* BOTON SUBMIT */
-let button = document.querySelector('.formcontato__botao');
-let buttonText = document.querySelector('.formcontato__tick');
-
-const tickMark = "<svg width=\"40\" height=\"25\" viewBox=\"0 0 58 45\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"#fff\" fill-rule=\"nonzero\" d=\"M19.11 44.64L.27 25.81l5.66-5.66 13.18 13.18L52.07.38l5.65 5.65\"/></svg>";
-
-buttonText.innerHTML = "Enviar Mensaje";
-
-button.addEventListener('click', function (evento) {
-    evento.preventDefault();
-
-    if (buttonText.innerHTML !== "Enviar Mensaje") {
-        buttonText.innerHTML = "Enviar Mensaje";
-    } else if (buttonText.innerHTML === "Enviar Mensaje") {
-        buttonText.innerHTML = tickMark;
-    }
-    this.classList.toggle('formcontato__botao__circle');
-});
-
-
 /* TRANSICIONES */
 
 
