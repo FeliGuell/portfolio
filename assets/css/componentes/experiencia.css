@@ -1,0 +1,162 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience__section__title {
+    margin-top: 2rem;
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-componentsTitles);
+}
+
+
+.experience__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem 0 3rem 0;
+}
+
+.experience__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.experience__img{
+    width: 60%;
+    margin-left: 2rem;
+}
+
+.experience__info:nth-child(1),
+.experience__info:nth-child(3) {
+    margin: 0;
+}
+
+.experience__title {
+    font-size: var(--font-size-courseTitle);
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 1rem;
+}
+
+.experience__text {
+    font-size: var(--font-size-courseSubtitle);
+    margin-bottom: 0.5rem;
+}
+
+.experience__botao--repo {
+    font-size: var(--font-size-courseSubtitle);
+    border: 1px solid var(--button-color);
+    color: var(--button-color);
+    width: 116px;
+    height: 51px;
+    margin-right: 0.5rem;
+}
+
+.experience__botao--demo {
+    font-size: var(--font-size-courseSubtitle);
+    border: none;
+    color: var(--contrast-light-color);
+    width: 116px;
+    height: 51px;
+    margin-right: 0.5rem;
+}
+
+/* RESPOSIVE */
+
+@media (max-width: 768px) {
+    .experience__box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience__box:nth-child(3),
+    .experience__box:nth-child(5) {
+        flex-direction: column-reverse;
+    }
+
+    .experience__img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .experience__info {
+        margin: 0;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .experience__title,
+    .experience__text,
+    .experience__img {
+        margin-bottom: 0.5rem;
+    }
+
+    .experience__botao--repo {
+        width: 80px;
+        height: 40px;
+
+    }
+
+    .experience__botao--demo {
+
+        width: 80px;
+        height: 40px;
+
+    }
+}
+
+/* ANIMACIONES */
+
+.experience__botao--repo {
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+}
+
+.experience__botao--repo:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: var(--button-color);
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+}
+
+.experience__botao--repo:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.experience__botao--repo:hover:after {
+    width: 110%;
+}
+
+
+.experience__botao--demo {
+    border-color: var(--button-color);
+    color: var(--contrast-light-color);
+    box-shadow: 0 0 40px 40px var(--button-color) inset, 0 0 0 0 var(--button-color);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.experience__botao--demo:hover {
+    box-shadow: 0 0 10px 0 var(--button-color) inset, 0 0 10px 4px var(--button-color);
+    color: var(--button-color);
+    cursor: pointer;
+}
