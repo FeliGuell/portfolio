@@ -1,0 +1,54 @@
+:root {
+    --font-family: "Open Sans", sans-serif;
+  
+    --font-weight-bold: 700;
+    --font-weight-medium: 500;
+  
+    --font-size-header: 16px;
+    --font-size-title: 45px;
+    --font-size-componentsTitles: 26px;
+    --font-size-subtitle: 22px;
+    --font-size-aboutParagraph: 16px;
+    --font-size-courseTitle: 20px;
+    --font-size-courseSubtitle: 15px;
+    
+    --primary-color: #F5F5F5;
+    --secundary-color: #EAF2FD;
+    --button-color:#2A7AE4;
+    --contrast-dark-color: #464646;
+    --contrast-light-color: #fff;
+    --contrast-gray-color:#C8C8C8;
+    --warning-color:#df2525 ;
+  
+  
+    --shadow: 0 5px 10px #55a6ff38;
+  }
+
+
+  /* -------MEDIA QUERIES---------- */
+  
+  @media (max-width: 768px) {
+    :root {
+    --font-size-header: 14px;
+    --font-size-title: 18px;
+    --font-size-componentsTitles: 18px;
+    --font-size-subtitle: 12px;
+    --font-size-aboutParagraph: 14px;
+    --font-size-courseTitle: 14px;
+    --font-size-courseSubtitle: 12px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    :root {
+    --font-size-header: 12px;
+    --font-size-title: 16px;
+    --font-size-componentsTitles: 16px;
+    --font-size-subtitle: 10px;
+    --font-size-aboutParagraph: 12px;
+    --font-size-courseTitle: 12px;
+    --font-size-courseSubtitle: 10px;
+    }
+  }
+  
+  

@@ -1,0 +1,38 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secundary-color);
+    height: auto;
+}
+
+.about__container{
+    padding: 4rem 22rem 0 0;
+}
+
+.about__title{
+    font-size: var(--font-size-componentsTitles);
+    font-weight: var(--font-size-medium);
+    margin-bottom: 1.5rem;
+}
+
+.about__paragraph{
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.about__container img{
+    width: 25rem;
+    margin: -1rem 0 0 -9rem;
+}
+
+/* -------MEDIA QUERIES---------- */
+
+@media (max-width: 768px) {
+    .about__paragraph{
+        font-size: var(--font-size-subtitle);
+    }
+    .about__container{
+        width: 100%;
+        padding-top: 3rem;
+    }    
+}

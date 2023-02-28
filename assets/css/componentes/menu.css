@@ -1,0 +1,53 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.75rem;
+    font-size: var(--font-size-header);
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+}
+
+.menu__header img {
+    width: 1.5rem;
+}
+
+.menu__title {
+    font-weight: var(--font-weight-bold);
+    margin-left: 1rem;
+}
+
+.menu__nav {
+    display: flex;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__list__item {
+    margin-right: 2rem;
+}
+
+.menu__list__item__contacto {
+    list-style: none;
+    font-weight: var(--font-weight-bold);
+}
+
+/* -------MEDIA QUERIES---------- */
+
+@media (max-width: 768px) {
+    .menu__list{
+        display: none;
+    }
+}
+
+/* ANIMACIONES */
+
+.menu__list__item a:hover, 
+.menu__list__item__contacto:hover{
+    color: var(--button-color);
+}
