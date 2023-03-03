@@ -45,6 +45,7 @@
 .experience__text {
     font-size: var(--font-size-courseSubtitle);
     margin-bottom: 0.5rem;
+    line-height: 1.5;
 }
 
 .experience__botao--repo {

@@ -1,7 +1,7 @@
 import { valida } from "./validacion.js";
 
-const inputs = document.querySelectorAll(".formcontato__input");
-const textArea = document.querySelector(".formcontato__textarea");
+const inputs = document.querySelectorAll(".formcontacto__input");
+const textArea = document.querySelector(".formcontacto__textarea");
 
 
 inputs.forEach(input => {
