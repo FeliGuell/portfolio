@@ -55,7 +55,7 @@ ScrollReveal().reveal('.experience__box ', {
     distance: '-100px'
 });
 
-ScrollReveal().reveal('.formcontato ', {
+ScrollReveal().reveal('.formcontacto ', {
     duration: 1500,
     origin: 'rigth',
     distance: '-100px'
@@ -66,9 +66,15 @@ ScrollReveal().reveal('.formcontato ', {
 
 const links = document.querySelectorAll(".menu__list__item a");
 
+const link_contact = document.querySelectorAll(".menu__list__item__contacto a")
+
 for (const link of links) {
   link.addEventListener("click", clickHandler);
 }
+
+for (const link of link_contact) {
+    link.addEventListener("click", clickHandler);
+  }
 
 function clickHandler(e) {
   e.preventDefault();
@@ -80,3 +86,4 @@ function clickHandler(e) {
     behavior: "smooth"
   });
 }
+
