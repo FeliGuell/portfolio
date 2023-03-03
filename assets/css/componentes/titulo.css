@@ -27,6 +27,7 @@
 .title__bio {
     font-size: var(--font-size-title);
     font-weight: var(--font-weight-medium);
+    line-height: 1.2;
 }
 
 .title__network {

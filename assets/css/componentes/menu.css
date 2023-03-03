@@ -22,10 +22,12 @@
 
 .menu__nav {
     display: flex;
+    align-items: center;
 }
 
 .menu__list {
     display: flex;
+    align-items: center;
 }
 
 .menu__list__item {
