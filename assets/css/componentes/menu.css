@@ -37,6 +37,41 @@
     font-weight: var(--font-weight-bold);
 }
 
+.english__language{
+    position: relative;
+    width: 25px;
+}
+
+.english__language:before{
+    content:'';
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background: var(--contrast-dark-color);
+    border-radius: 15px;
+}
+
+.english__language:after{
+    content:'';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 15px;
+    transition: 0.25s;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+ 
+.english__language:checked:after{
+    left:15px;
+    border: 1px solid var(--button-color);
+}
+
+.english__language:checked::before{
+    background: var(--button-color);
+} 
+
 /* -------MEDIA QUERIES---------- */
 
 @media (max-width: 768px) {
