@@ -6,8 +6,9 @@
 }
 
 .about__container{
-    padding: 4rem 22rem 0 0;
-}
+    padding: 3rem 0;
+
+} 
 
 .about__title{
     font-size: var(--font-size-componentsTitles);
@@ -23,6 +24,7 @@
 .about__container img{
     width: 25rem;
     margin: -1rem 0 0 -9rem;
+ 
 }
 
 /* -------MEDIA QUERIES---------- */
@@ -32,7 +34,6 @@
         font-size: var(--font-size-subtitle);
     }
     .about__container{
-        width: 100%;
         padding-top: 3rem;
     }    
 }

@@ -29,3 +29,19 @@ textArea.addEventListener("blur", (input) =>{
         location.href="../index.html"
     }
  }
+
+
+ /* ------- Botón hamburguesa ------- */
+const nav = document.querySelector(".menu__nav");
+const abrir = document.querySelector(".menu__abrir");
+const cerrar = document.querySelector(".menu__cerrar");
+
+console.log(abrir);
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+})
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+})

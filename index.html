@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,72 +19,99 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- Font Open Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icono -->
     <link rel="icon" type="image/jpg" href="assets/images/logo-f.png">
-    
+
     <title>Felipe Güell</title>
 </head>
+
 <body>
     <!-- Sección del Menú  -->
     <div class="todo">
-    <section class="menu container" >
-        <header class="menu__header">
-            <img src="assets/images/vector.png">
-            <h3 class="menu__title">Felipe Güell</h3>
-        </header>
-        <nav class="menu__nav">
-            <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <li class="menu__list__item"> Inglés
-                    <input type="checkbox" class="english__language">
-                </li>
-            </ul>
-            <ul class="menu__nav">
-                <li class="menu__list__item__contacto"><a href="#contacto">feliguells@gmail.com</a></li>
-            </ul>
-            
+        <section class="menu container">
 
-        </nav>
-    </section>
+            <header class="menu__header">
 
-    <!-- Sección del Header/Title/Hero -->
-    <section class="title container" >
-        <div class="title__div">
-            <div class="title__container">
-                <h2 class="title__bio">Hola, mi nombre es Felipe Güell y me estoy enfoncando como desarrollador de java</h2>
-                <h3 class="title__subsection">Me estoy formando con cursos, siguiendo una ruta de aprendizaje y sumando proyectos para adquirir experiencia </h3>
-                <ul class="title__network">
-                     <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/FeliGuell">Github <img src="assets/images/arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/feliguellweb/">LinkedIn <img src="assets/images/arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://api.whatsapp.com/send?phone=542645846555">WhatsApp <img src="assets/images/arrow.png"></a></li>
-                    <li class="title__network__item"><a href="assets/images/curriculum.png">Curriculum <img src="assets/images/arrow.png"></a></li>
-                </ul>
+                <div class="menu__logo">
+                    <img src="assets/images/vector.png">
+                    <h3 class="menu__title">Felipe Güell</h3>
+                </div>
+
+                <div class="menu__abrir">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__list__item"><button id="menu__cerrar" class="menu__cerrar">Cerrar</button></li>
+                        <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+                        <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                        <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                        <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                        <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+                        <li class="menu__list__item">  Inglés
+                            <input type="checkbox" class="english__language">
+                        </li>
+                        <li class="menu__list__item__contacto"><a href="#contacto">feliguells@gmail.com</a></li>
+
+                    </ul>
+                </nav>
+
+
+            </header>
+
+        </section>
+
+        <!-- Sección del Header/Title/Hero -->
+        <section class="title container">
+            <div class="title__div">
+                <div class="title__container">
+                    <h2 class="title__bio">Hola, mi nombre es Felipe Güell y me estoy enfoncando como desarrollador de
+                        java</h2>
+                    <h3 class="title__subsection">Me estoy formando con cursos, siguiendo una ruta de aprendizaje y
+                        sumando proyectos para adquirir experiencia </h3>
+                    <ul class="title__network">
+                        <!-- Pon los enlaces de tus redes sociales favoritas -->
+                        <li class="title__network__item"><a href="https://github.com/FeliGuell">Github <i
+                                    class="fa fa-arrow-right" aria-hidden="true"></i> </a></li>
+                        <li class="title__network__item"><a href="https://www.linkedin.com/in/feliguellweb/">LinkedIn <i
+                                    class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                        <li class="title__network__item"><a
+                                href="https://api.whatsapp.com/send?phone=542645846555">WhatsApp <i
+                                    class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                        <li class="title__network__item"><a href="assets/images/curriculum.png">Curriculum <i
+                                    class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <img class="title__profile" src="assets/images/profile.png">
+                </div>
+                
             </div>
-            <img class="title__profile" src="assets/images/profile.png">
-        </div>
-    </section>
-    
-    <!-- Sección sobre mi -->
-    <section class="about container" id="sobre-mi">
-        <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Mi desafío a diario es auto superarme, disfruto mucho aprender. Me gusta trabajar en equipo de forma cooperativa y resolver problemas. Me adapto a nuevos cambios. Trato siempre de mejorar la comunicación para que sea más asertiva.</p>
-            <!-- Si quieres, pon tú firma acá! -->
-            <img src="assets/images/signature.png">
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección de Skills -->
-    <section class="skills container" id="skills">
-        <h3 class="skills__title">Skills</h3>
+        <!-- Sección sobre mi -->
+        <section class="about container" id="sobre-mi">
+            <div class="about__container">
+                <h3 class="about__title">Sobre mi</h3>
+                <p class="about__paragraph">Mi desafío a diario es auto superarme, disfruto mucho aprender. Me gusta
+                    trabajar en equipo de forma cooperativa y resolver problemas. Me adapto a nuevos cambios. Trato
+                    siempre de mejorar la comunicación para que sea más asertiva.</p>
+                <!-- Si quieres, pon tú firma acá! -->
+                <img src="assets/images/signature.png">
+            </div>
+        </section>
+
+        <!-- Sección de Skills -->
+        <section class="skills container" id="skills">
+            <h3 class="skills__title">Skills</h3>
             <div class="skills__line">
 
                 <div class="skills__box">
@@ -135,7 +163,7 @@
                     </ul>
                 </div>
 
-                
+
                 <div class="skills__box">
                     <ul>
                         <li class="skills__img"> <img src="assets/images/postman.jpg" alt=""> </li>
@@ -172,14 +200,14 @@
                     </ul>
                 </div>
 
-                
+
                 <div class="skills__box">
                     <ul>
                         <li class="skills__img"> <img src="assets/images/bootstrap.jpg" alt=""> </li>
                         <li class="skills__name">Bootstrap</li>
                     </ul>
                 </div>
-                  
+
 
                 <div class="skills__box">
                     <ul>
@@ -210,11 +238,11 @@
                 </div>
 
             </div>
-    </section>
+        </section>
 
-    <!-- Sección de Hobbies -->
-    <section class="hobbies container" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
+        <!-- Sección de Hobbies -->
+        <section class="hobbies container" id="hobbies">
+            <h3 class="hobbies__title">Hobbies</h3>
             <div class="hobbies__line">
 
                 <div class="hobbies__box">
@@ -253,200 +281,252 @@
                 </div>
 
             </div>
-    </section>
+        </section>
 
         <!-- Sección de Formación académica -->
-    <section class="academic container" id="formacion">
-        <h2 class="academic__title" >Formación académica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets/images/unsj.png"></li>
-                    <li class="academic__courses__item__title"><h4>Ingeniería Industrial</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>(2018 - materias aprobadas = 12) - UNSJ</p></li>
-                </ul>
+        <section class="academic container" id="formacion">
+            <h2 class="academic__title">Formación académica</h2>
+            <div class="academic__courses">
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!-- Pon el logotipo de la institución de formación -->
+                        <li class="academic__courses__item__img"><img src="assets/images/unsj.png"></li>
+                        <li class="academic__courses__item__title">
+                            <h4>Ingeniería Industrial</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>(2018 - materias aprobadas = 12) - UNSJ</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!-- Pon el logotipo de la institución de formación -->
+                        <li class="academic__courses__item__img"><img src="assets/images/unsj.png"></li>
+                        <li class="academic__courses__item__title">
+                            <h4>Tecnicatura Universitaria en Programación Web</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>(2022 - En curso) - UNSJ</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!--Pon el logotipo de la institución de formación -->
+                        <li class="academic__courses__item__img"><img src="assets/images/alura_logo.png"></li>
+                        <li class="academic__courses__item__title">
+                            <h4>ONE- Oracle Next Education</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>(mar. 2022 - oct. 2022) - Alura</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <!-- Pon el logotipo de la institución de formación -->
+                        <li class="academic__courses__item__img"><img src="assets/images/egg.png"></li>
+                        <li class="academic__courses__item__title">
+                            <h4>Programación Full Stack</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>(jun. 2022 - feb. 2023) - Egg Education </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets/images/unsj.png"></li>
-                    <li class="academic__courses__item__title"><h4>Tecnicatura Universitaria en Programación Web</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>(2022 - En curso) - UNSJ</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets/images/alura_logo.png"></li>
-                    <li class="academic__courses__item__title"><h4>ONE- Oracle Next Education</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>(mar. 2022 - oct. 2022) - Alura</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets/images/egg.png"></li>
-                    <li class="academic__courses__item__title"><h4>Programación Full Stack</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>(jun. 2022 - feb. 2023) - Egg Education </p></li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección de Experiencia Profesional/Proyectos-->
-    <section class="experience container" id="xp">
+        <!-- Sección de Experiencia Profesional/Proyectos-->
+        <section class="experience container" id="xp">
 
-        <h2 class="experience__section__title" >Experiencia Profesional y Prácticas</h2>
-        
+            <h2 class="experience__section__title">Experiencia Profesional y Prácticas</h2>
 
-        
-        <div class="experience__box">
-            <div class="experience__info">
-                <h2 class="experience__title">Proyecto Biblioteca Egg</h2>
-                <h3 class="experience__text">Es una biblioteca donde se pueden crear libros, autores y editoriales. (En el README de repositorio se encuentra usuario y contraseña). Tecnologías: Java 19,
-                    Spring Data JPA, Spring Boot, Spring Security ,Thymeleaf ,Spring Web, Bootstrap</h3>
+
+
+            <div class="experience__box">
+                <div class="experience__info">
+                    <h2 class="experience__title">Proyecto Biblioteca Egg</h2>
+                    <h3 class="experience__text">Es una biblioteca donde se pueden crear libros, autores y editoriales.
+                        (En el README de repositorio se encuentra usuario y contraseña). Tecnologías: Java 19,
+                        Spring Data JPA, Spring Boot, Spring Security ,Thymeleaf ,Spring Web, Bootstrap</h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/FeliGuell/biblioteca"><button class="experience__botao--repo">Repositorio</button></span></a>
-                            <span class="experience__demo"><a href="http://biblioteca-egg.us-east-2.elasticbeanstalk.com/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__repo"><a href="https://github.com/FeliGuell/biblioteca"><button
+                                    class="experience__botao--repo">Repositorio</button></span></a>
+                        <span class="experience__demo"><a
+                                href="http://biblioteca-egg.us-east-2.elasticbeanstalk.com/"><button
+                                    class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
+                </div>
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <img class="experience__img" src="assets/images/biblioteca.png">
             </div>
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets/images/biblioteca.png">
-        </div>  
 
 
-        <div class="experience__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets/images/noticias.jpg">
-            <div class="experience__info">
-                <h2 class="experience__title">Sitio de noticias Egg News </h2>
-                <h3 class="experience__text"> Consiste en el desarrollo de un sistema web en Java utilizando una base de datos MySQL, 
-                                              JPA Repository para persistir objetos y 
-                                              Spring Boot como framework de desarrollo web. (Usuario y contraseña en README del repositorio) </h3>
+            <div class="experience__box">
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <img class="experience__img" src="assets/images/noticias.jpg">
+                <div class="experience__info">
+                    <h2 class="experience__title">Sitio de noticias Egg News </h2>
+                    <h3 class="experience__text"> Consiste en el desarrollo de un sistema web en Java utilizando una
+                        base de datos MySQL,
+                        JPA Repository para persistir objetos y
+                        Spring Boot como framework de desarrollo web. (Usuario y contraseña en README del repositorio)
+                    </h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/FeliGuell/noticias"><button class="experience__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href=" http://noticias-egg.us-east-2.elasticbeanstalk.com"><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__repo"><a href="https://github.com/FeliGuell/noticias"><button
+                                    class="experience__botao--repo">Repositorio</button></a></span>
+                        <span class="experience__demo"><a
+                                href=" http://noticias-egg.us-east-2.elasticbeanstalk.com"><button
+                                    class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
+                </div>
             </div>
-        </div>  
 
 
-        <div class="experience__box">
-            <div class="experience__info">
-                <h2 class="experience__title">Sistema gestión Hotel Alura</h2>
-                <h3 class="experience__text">Es un sistema para un Hotel, donde se pueden registrar los huéspedes que van ingresando y 
-                                            también la reserva con su respectiva fecha de ingreso y fecha de salida. 
-                                            Cuenta con un sistema de búsqueda para buscar por apellido o por número de reserva. 
-                                            Cada registro tiene la opción para ser modificado o eliminado. Tecnologías: Java, Eclipse, Biblioteca JCalendar, MySql, Plugin WindowBuilder</h3>
+            <div class="experience__box">
+                <div class="experience__info">
+                    <h2 class="experience__title">Sistema gestión Hotel Alura</h2>
+                    <h3 class="experience__text">Es un sistema para un Hotel, donde se pueden registrar los huéspedes
+                        que van ingresando y
+                        también la reserva con su respectiva fecha de ingreso y fecha de salida.
+                        Cuenta con un sistema de búsqueda para buscar por apellido o por número de reserva.
+                        Cada registro tiene la opción para ser modificado o eliminado. Tecnologías: Java, Eclipse,
+                        Biblioteca JCalendar, MySql, Plugin WindowBuilder</h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/FeliGuell/challenge-one-alura-hotel-latam"><button class="experience__botao--repo">Repositorio</button></span></a>
-                            <span class="experience__demo"><a href="https://www.linkedin.com/posts/feliguellweb_aqu%C3%AD-les-traigo-el-%C3%BAltimo-challenge-one-activity-6986004350410076160-erFD?utm_source=share&utm_medium=member_desktop"><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__repo"><a
+                                href="https://github.com/FeliGuell/challenge-one-alura-hotel-latam"><button
+                                    class="experience__botao--repo">Repositorio</button></span></a>
+                        <span class="experience__demo"><a
+                                href="https://www.linkedin.com/posts/feliguellweb_aqu%C3%AD-les-traigo-el-%C3%BAltimo-challenge-one-activity-6986004350410076160-erFD?utm_source=share&utm_medium=member_desktop"><button
+                                    class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
+                </div>
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <img class="experience__img" src="assets/images/sistema-gestion.jpg">
             </div>
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets/images/sistema-gestion.jpg">
-        </div>  
 
 
-        <div class="experience__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets/images/alurageek.png">
-            <div class="experience__info">
-                <h2 class="experience__title">E-commerce AluraGeek </h2>
-                <h3 class="experience__text">Consiste en el desarrollo Front-End de un e-commerce, tienda AluraGeek, en donde se pueden administrar los productos y contactarse mediante un formulario. 
-                                            Tecnologías: CSS Flexbox, CSS Grid, Layouts Resposivos, HTML,
-                                            Javascript: CRUD; Manipulación al DOM; LocalStorage; Validación de formularios
-                </h3>
+            <div class="experience__box">
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <img class="experience__img" src="assets/images/alurageek.png">
+                <div class="experience__info">
+                    <h2 class="experience__title">E-commerce AluraGeek </h2>
+                    <h3 class="experience__text">Consiste en el desarrollo Front-End de un e-commerce, tienda AluraGeek,
+                        en donde se pueden administrar los productos y contactarse mediante un formulario.
+                        Tecnologías: CSS Flexbox, CSS Grid, Layouts Resposivos, HTML,
+                        Javascript: CRUD; Manipulación al DOM; LocalStorage; Validación de formularios
+                    </h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/FeliGuell/challenger-one-ecommerce"><button class="experience__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href="https://www.linkedin.com/posts/feliguellweb_muestro-un-proyecto-realizado-a-partir-activity-6986045124560490497-vXVf?utm_source=share&utm_medium=member_desktop"><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__repo"><a
+                                href="https://github.com/FeliGuell/challenger-one-ecommerce"><button
+                                    class="experience__botao--repo">Repositorio</button></a></span>
+                        <span class="experience__demo"><a
+                                href="https://www.linkedin.com/posts/feliguellweb_muestro-un-proyecto-realizado-a-partir-activity-6986045124560490497-vXVf?utm_source=share&utm_medium=member_desktop"><button
+                                    class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
+                </div>
             </div>
-        </div>  
 
 
-        <div class="experience__box">
-            <div class="experience__info">
-                <h2 class="experience__title">Ahorcado</h2>
-                <h3 class="experience__text">Challenge Oracle. Juego desarrollado con HTML5, CSS3 y Javascript</h3>
+            <div class="experience__box">
+                <div class="experience__info">
+                    <h2 class="experience__title">Ahorcado</h2>
+                    <h3 class="experience__text">Challenge Oracle. Juego desarrollado con HTML5, CSS3 y Javascript</h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/FeliGuell/challenger2-ahorcado"><button class="experience__botao--repo">Repositorio</button></span></a>
-                            <span class="experience__demo"><a href="https://feliguell.github.io/challenger2-ahorcado/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__repo"><a
+                                href="https://github.com/FeliGuell/challenger2-ahorcado"><button
+                                    class="experience__botao--repo">Repositorio</button></span></a>
+                        <span class="experience__demo"><a
+                                href="https://feliguell.github.io/challenger2-ahorcado/"><button
+                                    class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
+                </div>
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <img class="experience__img" src="assets/images/ahorcado.png">
             </div>
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets/images/ahorcado.png">
-        </div>  
 
 
-        <div class="experience__box">
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets/images/dom-localstorage.png">
-            <div class="experience__info">
-                <h2 class="experience__title">Lista de tareas</h2>
-                <h3 class="experience__text">Manipulación del DOM con JavaScript. Se trabajó con LocalStorage.</h3>
+            <div class="experience__box">
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <img class="experience__img" src="assets/images/dom-localstorage.png">
+                <div class="experience__info">
+                    <h2 class="experience__title">Lista de tareas</h2>
+                    <h3 class="experience__text">Manipulación del DOM con JavaScript. Se trabajó con LocalStorage.</h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/FeliGuell/dom-localStorage"><button class="experience__botao--repo">Repositorio</button></a></span>
-                            <span class="experience__demo"><a href="https://feliguell.github.io/dom-localStorage/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__repo"><a href="https://github.com/FeliGuell/dom-localStorage"><button
+                                    class="experience__botao--repo">Repositorio</button></a></span>
+                        <span class="experience__demo"><a href="https://feliguell.github.io/dom-localStorage/"><button
+                                    class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
+                </div>
             </div>
-        </div>  
 
-        <div class="experience__box">
-            <div class="experience__info">
-                <h2 class="experience__title">Validaciones de Formulario</h2>
-                <h3 class="experience__text">Realizado con HTML5, CSS3 y JavaScript. Se trabajó con expresiones regulares </h3>
+            <div class="experience__box">
+                <div class="experience__info">
+                    <h2 class="experience__title">Validaciones de Formulario</h2>
+                    <h3 class="experience__text">Realizado con HTML5, CSS3 y JavaScript. Se trabajó con expresiones
+                        regulares </h3>
                     <div class="experience__description">
                         <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/FeliGuell/html-validaciones-js"><button class="experience__botao--repo">Repositorio</button></span></a>
-                            <span class="experience__demo"><a href="https://feliguell.github.io/html-validaciones-js/registro.html"><button class="experience__botao--demo">Ver demo</button></a></span>
+                        <span class="experience__repo"><a
+                                href="https://github.com/FeliGuell/html-validaciones-js"><button
+                                    class="experience__botao--repo">Repositorio</button></span></a>
+                        <span class="experience__demo"><a
+                                href="https://feliguell.github.io/html-validaciones-js/registro.html"><button
+                                    class="experience__botao--demo">Ver demo</button></a></span>
                     </div>
+                </div>
+                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
+                <img class="experience__img" src="assets/images/validaciones.png">
             </div>
-            <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-            <img class="experience__img" src="assets/images/validaciones.png">
-        </div>  
 
 
-    </section>
+        </section>
 
         <!-- Sección de Contacto -->
         <section class="formcontacto" id="contacto">
-            <div  class="formcontacto__contacto container">
+            <div class="formcontacto__contacto container">
                 <div class="formcontacto--izquierda">
                     <img class="formcontacto__img" src="assets/images/contact_image.png">
                 </div>
                 <div class="formcontacto__text">
                     <h2 class="formcontacto__title">Contacto</h2>
                     <div class="formcontacto__subtext">
-                        <h3 >¿Quieres contactarme?</h3>
-                        <h3 >Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    </div>                 
-                    <form action="https://formsubmit.co/feliguells@gmail.com" method="POST" class="formcontacto__form" name="form">
-                       
-                        <div class="formcontacto__input-container"> 
-                            <input class="formcontacto__input" type="text" name="name" placeholder="Nombre" maxlength="50" required data-tipo="nombre">  
-                            <span class="input-message-error">Este campo no es válido</span>
-                        </div>
+                        <h3>¿Quieres contactarme?</h3>
+                        <h3>Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+                    </div>
+                    <form action="https://formsubmit.co/feliguells@gmail.com" method="POST" class="formcontacto__form"
+                        name="form">
 
-                        <div class="formcontacto__input-container"> 
-                            <input class="formcontacto__input" type="email" name="email" placeholder="E-mail" required data-tipo="email">   
+                        <div class="formcontacto__input-container">
+                            <input class="formcontacto__input" type="text" name="name" placeholder="Nombre"
+                                maxlength="50" required data-tipo="nombre">
                             <span class="input-message-error">Este campo no es válido</span>
                         </div>
 
                         <div class="formcontacto__input-container">
-                            <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto" required data-tipo="asunto" maxlength="50">
+                            <input class="formcontacto__input" type="email" name="email" placeholder="E-mail" required
+                                data-tipo="email">
                             <span class="input-message-error">Este campo no es válido</span>
-                         </div>
+                        </div>
 
                         <div class="formcontacto__input-container">
-                            <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensagem" name="mensaje" data-tipo="mensaje" required  maxlength="300" placeholder="Mensaje"></textarea>
+                            <input class="formcontacto__input" type="text" name="asunto" placeholder="Asunto" required
+                                data-tipo="asunto" maxlength="50">
+                            <span class="input-message-error">Este campo no es válido</span>
+                        </div>
+
+                        <div class="formcontacto__input-container">
+                            <textarea class="formcontacto__textarea" rows="5" cols="40" id="mensagem" name="mensaje"
+                                data-tipo="mensaje" required maxlength="300" placeholder="Mensaje"></textarea>
                             <span class="input-message-error">Este campo no es válido</span>
                         </div>
 
@@ -465,10 +545,14 @@
         </section>
     </div>
 
- <!-- Script del documento JavaScript -->
-<script type="module" src="js/app.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="js/animacion.js"></script>
+    <!-- Script del documento JavaScript -->
+    <script type="module" src="js/app.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/animacion.js"></script>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/f552689564.js" crossorigin="anonymous"></script>
+
 
 </body>
+
 </html>

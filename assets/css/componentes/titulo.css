@@ -1,14 +1,17 @@
+.title{
+    margin: 2rem 0;
+}
+
 .title__div {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 2rem 0;
-
+    gap: 1rem;
 }
 
 .title__container {
     align-items: center;
     max-height: 20rem;
-    margin-right: 1rem;
     padding: 3rem 0;
 
 }
@@ -22,6 +25,7 @@
 .title__profile {
     height: 20rem;
     border-radius: 100%;
+
 }
 
 .title__bio {
@@ -40,8 +44,8 @@
 
 }
 
-.title__network__item img {
-    height: 0.7rem;
+.title__network__item i {
+    font-size: 1rem;
     align-items: center;
 }
 
@@ -57,11 +61,12 @@
     }
 
     .title__network {
-        justify-content: space-around;
+        justify-content: flex-start;
+        gap: 1.5rem;
     }
 
-    .title__network__item img {
-        height: 0.5rem;
+    .title__network__item i {
+        font-size: 0.7rem;
     }
 
     .title__profile {
@@ -71,6 +76,17 @@
     .title__container {
         padding: 0;
     }
+
+   
+}
+
+@media (max-width: 475px) {
+    .title__div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
 
 @media (max-width: 360px) {

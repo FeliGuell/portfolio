@@ -5,7 +5,6 @@ body {
   background-color: var(--primary-color);
   color: var(--contrast-dark-color);
   font-family: var(--font-family);
-  overflow-x: hidden;
 }
 
 .container {
@@ -13,29 +12,29 @@ body {
   padding-left: 1rem;
 }
 
-.flex {
-  display: flex;
+.menu,
+.title,
+.about{
+  position: relative;
 }
 
-.flex--center {
-  align-items: center;
-  justify-content: center;
+.menu{
+  z-index: 1;
 }
 
-.flex--column {
-  flex-direction: column;
+.title{
+  z-index: 0;
 }
+.about{
+  z-index: -1;
+}
+
 
 
 /* -------MEDIA QUERIES---------- */
 
 
-@media (max-width: 360px) {
-  .container {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-  }
-}
+
 
 @media (min-width: 768px) {
   .container {

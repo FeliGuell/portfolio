@@ -11,5 +11,5 @@
     flex-direction: column;
     align-items: center;
     line-height: 1.2;
-    font-size: var(--font-weight-medium);
+    font-size: var(--font-size-courseSubtitle);
 }

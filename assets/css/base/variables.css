@@ -34,8 +34,20 @@
     --font-size-componentsTitles: 18px;
     --font-size-subtitle: 12px;
     --font-size-aboutParagraph: 14px;
-    --font-size-courseTitle: 14px;
+    --font-size-courseTitle: 16px;
     --font-size-courseSubtitle: 12px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    :root {
+    --font-size-header: 12px;
+    --font-size-title: 16px;
+    --font-size-componentsTitles: 18px;
+    --font-size-subtitle: 8px;
+    --font-size-aboutParagraph: 12px;
+    --font-size-courseTitle: 13px;
+    --font-size-courseSubtitle: 10px;
     }
   }
 
@@ -44,7 +56,7 @@
     --font-size-header: 12px;
     --font-size-title: 16px;
     --font-size-componentsTitles: 16px;
-    --font-size-subtitle: 10px;
+    --font-size-subtitle: 8px;
     --font-size-aboutParagraph: 12px;
     --font-size-courseTitle: 12px;
     --font-size-courseSubtitle: 10px;

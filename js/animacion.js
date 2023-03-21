@@ -1,6 +1,12 @@
 
 /* TRANSICIONES */
 
+ScrollReveal().reveal('.menu__header', {
+    duration: 1500,
+    origin: 'bottom',
+    distance: '-100px'
+});
+
 
 ScrollReveal().reveal('.menu', {
     duration: 1500,
@@ -57,7 +63,7 @@ ScrollReveal().reveal('.experience__box ', {
 
 ScrollReveal().reveal('.formcontacto ', {
     duration: 1500,
-    origin: 'rigth',
+    origin: 'right',
     distance: '-100px'
 });
 
